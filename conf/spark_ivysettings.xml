@@ -1,0 +1,9 @@
+<ivysettings>
+  <settings defaultResolver="chain"/>
+  <resolvers>
+    <chain name="chain">
+      <ibiblio name="huaweicloud" root="https://mirrors.huaweicloud.com/repository/maven" m2compatible="true"/>
+      <ibiblio name="central" m2compatible="true"/>
+    </chain>
+  </resolvers>
+</ivysettings>

@@ -28,5 +28,9 @@ COPY hdfs-site.xml /hadoop/etc/hadoop/hdfs-site.xml
 
 ENV HADOOP_CONF_DIR=/hadoop/etc/hadoop/
 ENV CORE_CONF_fs_defaultFS=hdfs://namenode:8020
+ENV SPARK_HOME=/spark
+
+COPY conf/spark-defaults.conf /spark/conf/
+COPY conf/spark_ivysettings.xml /spark/conf/
 
 WORKDIR /zeppelin
